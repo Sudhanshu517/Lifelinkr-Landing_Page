@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar with Offcanvas for Mobile -->
+  <nav class="navbar navbar-light bg-light shadow-sm px-4 py-2 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo" style="max-width: 160px;"></a>
+
+      <!-- Toggler for offcanvas menu -->
+      <!-- <button class="  border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <!-- Button with Bootstrap Icon -->
+<button class="btn d-lg-none navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu" style="background: linear-gradient(135deg, #00B2FF, #0066FF); border-radius: 8px;">
+  <i class="bi bi-list text-white fs-4"></i>
+</button>
+
+
+      <!-- Desktop Menu (optional) -->
+      <div class="d-none d-lg-flex gap-4 align-items-center">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Why Choose Us</a>
+        <a class="nav-link" href="#">Benefits</a>
+        <a class="nav-link" href="#">FAQs</a>
+                
+              
+        <a class="btn btn-outline-light text-primary rounded-5 bg-white py-3 px-5 ff-nun fw-bold" href="#">Schedule Demo</a>
+      </div>
+
+    </div>
+  </nav>
+
+  
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column gap-3">
+    <a href="#" class="nav-link1 fs-3">Benefits</a>
+    <a href="#" class="nav-link1 fs-3">Why Choose Us</a>
+    <a href="#" class="nav-link1 fs-3">FAQs</a>
+    <a href="#" class="btn btn-outline-primary text-primary bg-white border rounded-pill mt-3 ff-nun" style="width: 65%;">Call For Consultation</a>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Hero Section -->
+  <section class="pt-4 bg-light">
+    <div class="container">
+
+
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-6 mb-5 mb-sm-1 mb-lg-0">
+          <h2 class="fw-bold text-primary text-center text-lg-start fs-1 fs-md-2">
+            <!-- MANAGE PATIENT DATA<br>WITH IVF SOFTWARE -->
+            MANAGE PATIENT <br class="d-block d-lg-none" />
+            DATA WITH IVF <br class="d-block d-lg-none" />
+            SOFTWARE
+          </h2>
+          <p class="text-muted mt-3">
+            Boost Your Clinic's Efficiency, Enhance Patient Care and Streamline Clinic Operations
+          </p>
+
+          <div class="row row-cols-2 g-3 mt-4">
+            <div class="col d-flex align-items-start">
+              <img src="https://cdn-icons-png.flaticon.com/512/724/724715.png" width="24" class="me-2" />
+              <span>In-Built CRM</span>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="https://cdn-icons-png.flaticon.com/512/6338/6338455.png" width="24" class="me-2" />
+              <span>Patient Insight</span>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="https://cdn-icons-png.flaticon.com/512/2438/2438078.png" width="24" class="me-2" />
+              <span>Custom Fit</span>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="https://cdn-icons-png.flaticon.com/512/3689/3689312.png" width="24" class="me-2" />
+              <span>Easy Connect</span>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" width="24" class="me-2" />
+              <span>Info on-the-go</span>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="https://cdn-icons-png.flaticon.com/512/8106/8106887.png" width="24" class="me-2" />
+              <span>Data Transfer</span>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="https://cdn-icons-png.flaticon.com/512/3621/3621435.png" width="24" class="me-2" />
+              <span>Real-Time Analytics</span>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" width="24" class="me-2" />
+              <span>Personalized for You</span>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Only: Schedule Demo Button -->
+        <div class="mb-4 d-flex justify-content-center d-lg-none">
+                <a href="#" class="btn btn-primary rounded-pill fw-semibold px-4 py-2" style="background: linear-gradient(90deg, #00B2FF, #0066FF); border: none; border-radius: 999px;">
+                  Schedule Demo <span><img src="assets/images/f-arrow.png" alt="" style="width: 35px;"></span>
+                </a>
+              </div>
+
+
+        <!-- Right Form Card -->
+        <div class="col-lg-6 z-set">
+          <div class=" text-white p-4 rounded-4 shadow" style="background-color: #03254c;">
+            <h4 class="mb-4 text-center">Schedule a Free Demo</h4>
+            <div class="row custom-gap">
+              <div class="col-md-6">
+                <input type="text" class="form-control custom-input" placeholder="Full Name*" />
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control custom-input" placeholder="Email Address*" />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control custom-input" placeholder="Phone Number*" />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control custom-input" placeholder="WhatsApp Number" />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control custom-input" placeholder="Clinic Name*" />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control custom-input" placeholder="Country*" />
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <button class="btn btn-light text-primary fw-bold btn-wide rounded-pill">Next</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Trusted By IVF Clinics -->
+         
+       <!-- Trusted By IVF Clinics -->
+<section class="bg-light z-set">
+  <div class="container">
+    <div class="d-flex flex-column flex-lg-row align-items-center gap-3 gap-lg-4 trusted py-3">
+
+
+      <!-- Text Section -->
+       <div>
+
+         <p class="text-dark fw-bold mb-2 mb-lg-0 text-center text-lg-start w-100 w-lg-auto text-nowrap">
+           Trusted by Many IVF Clinics :
+         </p>
+       </div>
+
+      <!-- Swiper Slider -->
+      <div class="swiper trustedSwiper w-lg-auto flex-grow-1" style="max-width: 800px;">
+
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <img src="assets/images/brand1.jpeg" alt="Apex IVF" class="brand-icon" />
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <img src="assets/images/brand2.png" alt="Bloom IVF" class="brand-icon" />
+          </div>
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <img src="assets/images/brand3.jpeg" alt="Fertilia IVF" class="brand-icon" />
+          </div>
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <img src="assets/images/brand3.jpeg" alt="Fertility Nova" class="brand-icon" />
+          </div>
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <img src="assets/images/brand5.png" alt="Fertility Nova" class="brand-icon" />
+          </div>
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <img src="assets/images/brand6.png" alt="Fertility Nova" class="brand-icon" />
+          </div>
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <img src="assets/images/brand7.png" alt="Fertility Nova" class="brand-icon" />
+          </div>
+          <div class="swiper-slide d-flex justify-content-center align-items-center">
+            <img src="assets/images/brand5.png" alt="Fertility Nova" class="brand-icon" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  </section>
+
+
+
+  <div class="container my-4 p-0">
+    <div class="row">
+      <!-- Left Section -->
+     <div class="col-lg-8">
+  <!-- Wrapper Row -->
+  <div class="row g-4">
+
+    <!-- Group 1 -->
+    <div class="d-flex flex-column flex-md-row gap-3 ">
+      <div class="card-setup text-center w-100 w-md-0 flex-md-fill">
+        <i class="bi bi-shield-lock fs-1 text-primary"></i>
+        <h6 class="mt-2 fw-bold">Data Protection</h6>
+        <p class="text-muted small">Protect Data Leakage With Strict Data Protection</p>
+      </div>
+      <div class="card-setup text-center w-100 w-md-0 flex-md-fill">
+        <i class="bi bi-check2-square fs-1 text-primary"></i>
+        <h6 class="mt-2 fw-bold">Built In Task Manager</h6>
+        <p class="text-muted small">Never Miss a Task, Get Notified at Each Approval</p>
+      </div>
+      <div class="card-setup text-center w-100 w-md-0 flex-md-fill">
+        <i class="bi bi-eye fs-1 text-primary"></i>
+        <h6 class="mt-2 fw-bold">Easy Walkthrough</h6>
+        <p class="text-muted small">Access Patient Info Anytime, From Any Screen</p>
+      </div>
+    </div>
+
+    <!-- Group 2 -->
+    <div class="d-flex flex-column flex-md-row gap-3 w-100">
+      <div class="card-setup text-center w-100 w-md-0 flex-md-fill">
+        <i class="bi bi-person-lines-fill fs-1 text-primary"></i>
+        <h6 class="mt-2 fw-bold">Map Patients Journey</h6>
+        <p class="text-muted small">Step Linked Progression Bar to Know Milestones</p>
+      </div>
+      <div class="card-setup text-center w-100 w-md-0 flex-md-fill">
+        <i class="bi bi-boxes fs-1 text-primary"></i>
+        <h6 class="mt-2 fw-bold">One Stop Solution</h6>
+        <p class="text-muted small">No Need For Multiple Software Just Use One</p>
+      </div>
+      <div class="card-setup text-center w-100 w-md-0 flex-md-fill">
+        <i class="bi bi-cpu fs-1 text-primary"></i>
+        <h6 class="mt-2 fw-bold">AI Integration</h6>
+        <p class="text-muted small">TTS and AI Integrated to Reduce Human Error</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <!-- Calendar Section -->
+      <div class="d-none d-lg-block">
+        <div class="calendar-floater" id="calendarFloater">
+          <div class="sticky-calendar p-4 bg-white shadow rounded">
+            <h5 class="text-primary fw-bold mb-3">Schedule Software Demo</h5>
+            <div class="calendar-controls">
+              <button id="prevMonth">&lt;</button>
+              <div class="text-center fw-semibold" id="monthLabel">June 2025</div>
+              <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="d-flex justify-content-between text-muted fw-bold small mb-2 px-1">
+              <span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Left: Cards / Content -->
+      <!-- <div class="col-lg-7 col-12 bg-white rounded p-4 shadow-sm text-center text-md-start"> -->
+        <div class="col-lg-7 col-12 bg-white rounded p-4 shadow-sm text-center text-md-start mt-4 mb-5 mt-lg-0 mb-lg-0">
+
+        <h2 class="fw-bold" style="color: #092fac">Why Choose Us?</h2>
+
+        <!-- Card1 -->
+        <div class="row mb-4 align-items-start bg-white rounded shadow-sm">
+          <!-- Left Image -->
+          <div class="col-md-3 text-center mb-3 mb-md-0">
+            <img src="assets/images/why1.png" alt="Feature Image" class="img-fluid rounded card-image">
+          </div>
+
+          <!-- Right Text Block -->
+          <div class="col-md-9 d-flex mt-4 flex-column">
+            <h5 class="fw-semibold" style="color: #0c32b1">1. Seamless Patient Management</h5>
+            <p class="mb-0 fs-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, corporis praesentium? Esse.
+              <span class="more-text d-none">
+                This extended content appears when "Read More" is clicked
+              </span>
+              <span class="read-more text-primary fw-semibold" style="cursor:pointer;"> Read More</span>
+            </p>
+          </div>
+        </div>
+        <!-- Card-2 -->
+        <div class="row mb-4 align-items-start bg-white rounded shadow-sm">
+          <!-- Left Image -->
+          <div class="col-md-3 text-center mb-3 mb-md-0">
+            <img src="assets/images/why2.png" alt="Feature Image" class="img-fluid rounded card-image">
+          </div>
+
+          <!-- Right Text Block -->
+          <div class="col-md-9 d-flex mt-4 flex-column">
+            <h5 class="fw-semibold" style="color: #0c32b1">2. Seamless Patient Management</h5>
+            <p class="mb-0 fs-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, corporis praesentium? Esse.
+              <span class="more-text d-none">
+                This extended content appears when "Read More" is clicked
+              </span>
+              <span class="read-more text-primary fw-semibold" style="cursor:pointer;"> Read More</span>
+            </p>
+          </div>
+        </div>
+        <!-- Card-3 -->
+        <div class="row mb-4 align-items-start bg-white rounded shadow-sm">
+          <!-- Left Image -->
+          <div class="col-md-3 text-center mb-3 mb-md-0">
+            <img src="assets/images/why3.jpeg" alt="Feature Image" class="img-fluid rounded card-image">
+          </div>
+
+          <!-- Right Text Block -->
+          <div class="col-md-9 d-flex mt-4 flex-column">
+            <h5 class="fw-semibold" style="color: #0c32b1">3. Seamless Patient Management</h5>
+            <p class="mb-0 fs-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, corporis praesentium? Esse.
+              <span class="more-text d-none">
+                This extended content appears when "Read More" is clicked
+              </span>
+              <span class="read-more text-primary fw-semibold" style="cursor:pointer;"> Read More</span>
+            </p>
+          </div>
+        </div>
+        <!-- Card-4 -->
+        <div class="row mb-4 align-items-start bg-white rounded shadow-sm">
+          <!-- Left Image -->
+          <div class="col-md-3 text-center mb-3 mb-md-0">
+            <img src="assets/images/why4.png" alt="Feature Image" class="img-fluid rounded">
+          </div>
+
+          <!-- Right Text Block -->
+          <div class="col-md-9 d-flex mt-4 flex-column">
+            <h5 class="fw-semibold" style="color: #0c32b1">1. Seamless Patient Management</h5>
+            <p class="mb-0 fs-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, corporis praesentium? Esse.
+              <span class="more-text d-none">
+                This extended content appears when "Read More" is clicked
+              </span>
+              <span class="read-more text-primary fw-semibold" style="cursor:pointer;"> Read More</span>
+            </p>
+          </div>
+        </div>
+        <!-- Card-5 -->
+        <div class="row mb-4 align-items-start bg-white rounded shadow-sm">
+          <!-- Left Image -->
+          <div class="col-md-3 text-center mb-3 mb-md-0">
+            <img src="assets/images/why6.jpeg" alt="Feature Image" class="img-fluid rounded card-image">
+          </div>
+
+          <!-- Right Text Block -->
+          <div class="col-md-9 d-flex mt-4 flex-column">
+            <h5 class="fw-semibold" style="color: #0c32b1">4. Seamless Patient Management</h5>
+            <p class="mb-0 fs-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, corporis praesentium? Esse.
+              <span class="more-text d-none">
+                This extended content appears when "Read More" is clicked
+              </span>
+              <span class="read-more text-primary fw-semibold" style="cursor:pointer;"> Read More</span>
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <!-- Add more cards similarly -->
+      </div>
+
+      <!-- Right: Blank space for fixed calendar -->
+      <div class="col-lg-3 d-none d-lg-block"></div>
+    </div>
+  </div>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- LEFT: Main Content -->
+        <div class="col-lg-7 col-md-12 bg-white rounded">
+          <h2 class="mb-3 fw-bold text-primary text-center mt-4">Benefits You Will Gain</h2>
+
+          <!-- Example Grid Cards (you can customize these later) -->
+          <div class="row g-0">
+            <!-- <div class="col-sm-6 col-md-4 bg-white"> -->
+              <div class="col-6 col-md-4 bg-white">
+
+              <div class="text-center p-3 h-100 ">
+                <img src="assets/benefits-images/ben6.webp" alt="Benefit" class="img-fluid mb-2 rounded fixed-img" />
+                <div class="small-font ff-nun">Optimize <strong><span class="dark-blue">Operations</span></strong></div>
+              </div>
+            </div>
+            <!-- <div class="col-sm-6 col-md-4 bg-white"> -->
+              <div class="col-6 col-md-4 bg-white">
+
+              <div class="text-center p-3 h-100 ">
+                <img src="assets/benefits-images/ben2.jpeg" alt="Benefit" class="img-fluid mb-2 rounded fixed-img" />
+                <div class="small-font ff-nun">Leverage ORM for <strong><span class="dark-blue">Patient</span></strong>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-sm-6 col-md-4 bg-white"> -->
+              <div class="col-6 col-md-4 bg-white">
+
+              <div class="text-center p-3 h-100 ">
+                <img src="assets/benefits-images/ben4.jpg" alt="Benefit" class="img-fluid mb-2 rounded fixed-img" />
+                <div class="small-font ff-nun">Simplify <strong><span class="dark-blue">Financial
+                      Processes</span></strong></div>
+              </div>
+            </div>
+            <!-- <div class="col-sm-6 col-md-4 bg-white"> -->
+              <div class="col-6 col-md-4 bg-white">
+
+              <div class="text-center p-3 h-100 ">
+                <img src="assets/benefits-images/ben5.jpg" alt="Benefit" class="img-fluid mb-2 rounded fixed-img" />
+                <div class="small-font ff-nun">Enhance <strong><span class="dark-blue">Data Security</span></strong>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-sm-6 col-md-4 bg-white"> -->
+              <div class="col-6 col-md-4 bg-white">
+
+              <div class="text-center p-3 h-100 ">
+                <img src="assets/benefits-images/ben6.webp" alt="Benefit" class="img-fluid mb-2 rounded fixed-img" />
+                <div class="small-font ff-nun">Leverage ORM for <strong><span class="dark-blue">Patient</span></strong>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-sm-6 col-md-4 bg-white"> -->
+              <div class="col-6 col-md-4 bg-white">
+
+              <div class="text-center p-3 h-100 ">
+                <img src="assets/benefits-images/ben4.jpg" alt="Benefit" class="img-fluid mb-2 rounded fixed-img" />
+                <div class="small-font ff-nun">Forever <strong><span class="dark-blue">Medical Records</span></strong>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Add more cards as needed -->
+          </div>
+        </div>
+
+        <!-- RIGHT: Blank Space Reserved for Calendar -->
+        <div class="col-lg-3 d-none d-lg-block">
+          <!-- This column intentionally left blank for calendar -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQs section -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <!-- Left Side: FAQs -->
+        <div class="col-lg-7 bg-white rounded">
+          <h2 class="fw-bold text-primary mb-4 mt-4 text-center">FAQs</h2>
+
+          <!-- FAQ Card with image -->
+          <div class="mb-4 mx-3">
+            <img src="assets/images/faq.jpg" alt="FAQ Banner" class="img-fluid rounded-3 mb-4 w-100 h-25" />
+          </div>
+
+          <!-- Accordion Starts -->
+          <div class="accordion mx-3" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item mb-3 faq-shadow">
+              <h2 class="accordion-header" id="faqHeadingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                  What features does LifeLinkr software include for clinics?
+                </button>
+              </h2>
+              <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  LifeLinkr includes patient management, appointment scheduling, billing, EHR, and customizable
+                  dashboards
+                  to streamline clinic operations?
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item mb-3 faq-shadow">
+              <h2 class="accordion-header" id="faqHeadingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                  Is LifeLinkr software suitable for individual doctors?
+                </button>
+              </h2>
+              <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, LifeLinkr is scalable for both individual doctors and multi-specialty clinics.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item mb-3 faq-shadow">
+              <h2 class="accordion-header" id="faqHeadingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                  How secure is patient data in LifeLinkr software?
+                </button>
+              </h2>
+              <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  All patient data is encrypted and securely stored following HIPAA compliance.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="accordion-item mb-3 faq-shadow">
+              <h2 class="accordion-header" id="faqHeadingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing?
+                </button>
+              </h2>
+              <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqHeadingSix"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis fugit placeat
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="accordion-item mb-3 faq-shadow">
+              <h2 class="accordion-header" id="faqHeadingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui dignissimos quasi praesentium
+                  officia possimus quos. Perferendis, recusandae?
+                </button>
+              </h2>
+              <div id="faqCollapseSeven" class="accordion-collapse collapse" aria-labelledby="faqHeadingSeven"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magnam illo fugit? Debitis harum
+                  necessitatibus, omnis obcaecati cum voluptate totam.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="accordion-item mb-3 faq-shadow">
+              <h2 class="accordion-header" id="faqHeadingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseEight" aria-expanded="false" aria-controls="faqCollapseEight">
+                  How secure is patient data in LifeLinkr software?
+                </button>
+              </h2>
+              <div id="faqCollapseEight" class="accordion-collapse collapse" aria-labelledby="faqHeadingEight"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  All patient data is encrypted and securely stored following HIPAA compliance.
+                </div>
+              </div>
+            </div>
+
+            <!-- Load More Section -->
+            <div id="moreFaqs" class="d-none">
+              <!-- FAQ 7 -->
+              <div class="accordion-item mb-3 faq-shadow">
+                <h2 class="accordion-header" id="faqHeadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                    Can I customize the LifeLinkr dashboard style?
+                  </button>
+                </h2>
+                <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, the dashboard is fully customizable with drag-and-drop widgets and templates.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 8 -->
+              <div class="accordion-item mb-3 faq-shadow">
+                <h2 class="accordion-header" id="faqHeadingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                    What are the pricing plans for LifeLinkr?
+                  </button>
+                </h2>
+                <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Pricing varies by clinic size and features needed. Contact our team for a tailored quote.
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ 9 -->
+              <div class="accordion-item mb-3 faq-shadow">
+                <h2 class="accordion-header" id="faqHeadingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseNine" aria-expanded="false" aria-controls="faqCollapseNine">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima?
+                  </button>
+                </h2>
+                <div id="faqCollapseNine" class="accordion-collapse collapse" aria-labelledby="faqHeadingNine"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore excepturi modi hic quos?
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ 10 -->
+              <div class="accordion-item mb-3 faq-shadow">
+                <h2 class="accordion-header" id="faqHeadingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseTen" aria-expanded="false" aria-controls="faqCollapseTen">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta?
+                  </button>
+                </h2>
+                <div id="faqCollapseTen" class="accordion-collapse collapse" aria-labelledby="faqHeadingTen"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi velit quam aliquam.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-3">
+              <button class="btn btn-outline-primary btn-sm" id="loadMoreBtn">Load More</button>
+            </div>
+          </div>
+          <!-- Accordion Ends -->
+        </div>
+
+        <!-- Right Side: Calendar Placeholder -->
+        <div class="col-lg-3 d-none d-lg-block">
+          <!-- Empty space for your calendar -->
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container my-5 p-0">
+      <div class="row g-0">
+        <!-- Left: Form -->
+        <div class="col-lg-7">
+          <div class="rounded dark-form" style="background-color: #072d66; color: white; padding: 2rem 4.5rem;">
+            <h2 class="text-white fw-bold mb-3 text-center">Schedule a Free Demo</h2>
+            <p class="text-white mb-4 text-center">
+              Experience Seamless <span style="color: #ffc107;">Healthcare Management</span> <br>with LifeLinkr
+            </p>
+
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="Full Name*" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control form-control-lg" placeholder="Email Address*" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="Phone Number*" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="WhatsApp Number">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="Clinic Name*" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="Country*" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="City*" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="number" class="form-control form-control-lg" placeholder="No. of Users">
+                </div>
+                <div class="col-12 mb-3">
+                  <select class="form-select form-select-lg">
+                    <option selected disabled>Currently Using Any Software?*</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </div>
+                <div class="col-12 mb-3">
+                  <textarea class="form-control form-control-lg" rows="3" placeholder="Message*" required></textarea>
+                </div>
+                <div class="col-12 mb-3 form-check text-white-50" style=" margin-left: 15px;">
+                  <input class="form-check-input me-2" type="checkbox" id="terms" required>
+                  <label class="form-check-label" for="terms">
+                    I agree and accept the <a href="#" class="text-warning text-decoration-none">Terms & Conditions</a>
+                  </label>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-light fw-semibold rounded-pill" style="padding: 10px 65px">
+                    Submit<span class="ms-2"><img src="assets/images/f-arrow.png" alt="f-arrow"
+                        style="width: 31px;"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: Reserved space for Calendar -->
+        <div class="col-lg-4 d-none d-lg-block">
+          <!-- Leave empty for fixed calendar -->
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="container">
+      <!-- Main Section Heading -->
+
+      <div class="row">
+        <!-- Left Content Cards -->
+        <div class="col-lg-7">
+
+          <!-- Card 1: Image Left, Text Right -->
+          <div class="row bg-white shadow-sm rounded p-5 align-items-center mb-4">
+            <h2 class="fw-bold text-primary text-center mb-4">Stay Focused, No More Software Hopping</h2>
+            <div class="col-md-6">
+              <img src="assets/images/web-dev1.jpeg" alt="Feature 1" class="img-fluid rounded equal-height-img">
+            </div>
+            <div class="col-md-6">
+              <ul class="mb-0 ps-3">
+                <li>Unlock powerful analytics to monitor performance</li>
+                <li>Track patient trends and key metrics Lorem, ipsum dolor.</li>
+                <li>Access everything from a centralized dashboard</li>
+              </ul>
+              <a href="#" class="btn btn-link p-0">Read More</a>
+
+               <!-- Schedule Demo Button -->
+              <div class="mt-3">
+                <a href="#" class="btn btn-primary rounded-pill fw-semibold px-4 py-1" style="background: linear-gradient(90deg, #00B2FF, #0066FF); border: none; border-radius: 999px;">
+                  Schedule Demo <span><img src="assets/images/f-arrow.png" alt="" style="width: 35px;"></span>
+                </a>
+              </div>
+            </div>
+            
+
+          </div>
+
+           <!-- Card 2: Text Left, Image Right -->
+          <div class="row bg-white shadow-sm rounded p-5 align-items-center mb-4 flex-md-row-reverse">
+            <h2 class="fw-bold text-primary text-center mb-4">Stay Focused, No More Software Hopping</h2>
+            <div class="col-md-6">
+              <img src="assets/images/web-dev2.jpeg" alt="Feature 1" class="img-fluid rounded equal-height-img">
+            </div>
+            <div class="col-md-6">
+              <ul class="mb-0 ps-3">
+                <li>Quam, reiciendis hic eveniet sunt in cupiditate perspiciatis aperiam debitis</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                <li>Enostrum accusamus voluptate nemo iste! Lorem, ipsum dolor.</li>
+              </ul>
+              <a href="#" class="btn btn-link p-0">Read More</a>
+
+               <!-- Schedule Demo Button -->
+              <div class="mt-3">
+                <a href="#" class="btn btn-primary rounded-pill fw-semibold px-4 py-1" style="background: linear-gradient(90deg, #00B2FF, #0066FF); border: none; border-radius: 999px;">
+                  Schedule Demo <span><img src="assets/images/f-arrow.png" alt="" style="width: 35px;"></span>
+                </a>
+              </div>
+            </div>
+            
+
+          </div>
+
+         
+          
+
+        </div>
+ 
+        <!-- Right Reserved Area (Calendar) -->
+        <div class="col-lg-4">
+          <!-- Leave this blank or add calendar later -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-light pt-5 pb-3">
+  <div class="container">
+    <div class="row gy-4 gx-5 justify-content-between">
+
+      <!-- Logo and Description -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div>
+          <img src="assets/images/logo.png" alt="LifeLinkr" style="max-width: 160px;">
+        </div>
+        <p class="text-muted mb-0">Simplifying IVF clinic operations with cutting-edge IVF management software.</p>
+        <p class="text-muted mb-0">Our solutions enhance efficiency, streamline workflows and deliver actionable insights to ensure better outcomes for IVF clinics.</p>
+        <p class="text-muted mb-0">Experience seamless integration and data-driven decisions with our innovative tools.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <h5 class="fw-semibold mb-3 mt-3">CONNECT</h5>
+        <div class="d-flex align-items-start mb-2">
+          <i class="bi bi-geo-alt-fill me-2 fs-4 text-dark"></i>
+          <div>
+            <div class="fw-semibold">Address</div>
+            <div class="text-muted">609, Shahpuri Tower, Janakpuri, India</div>
+          </div>
+        </div>
+        <div class="d-flex align-items-start mb-2">
+          <i class="bi bi-telephone-fill me-2 fs-4 text-dark"></i>
+          <div>
+            <div class="fw-semibold">Phone Number</div>
+            <a href="tel:+919999999999" class="text-primary text-decoration-none">+91 9999999999</a>
+          </div>
+        </div>
+        <div class="d-flex align-items-start mb-2">
+          <i class="bi bi-envelope-fill me-2 fs-4 text-dark"></i>
+          <div>
+            <div class="fw-semibold">Email</div>
+            <a href="mailto:info@lifelinkr.in" class="text-primary text-decoration-none">info@lifelinkr.in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call Back Form -->
+      <div class="col-lg-4 col-md-12 col-12">
+        <h5 class="fw-semibold mb-3 mt-3">REQUEST FREE CALL BACK</h5>
+        <form>
+          <input
+            type="text"
+            class="form-control mb-2"
+            placeholder="Enter Your Name"
+            style="border: 1px solid black; color: #333;"
+          >
+          <input
+            type="text"
+            class="form-control mb-3"
+            placeholder="Enter Your Phone Number"
+            style="border: 1px solid black; color: #333;"
+          >
+          <button
+            class="btn btn-primary w-100 fw-semibold"
+            style="background: linear-gradient(90deg, #00B2FF, #0066FF); border: none;"
+          >
+            Request call back
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Links -->
+    <div class="text-center mt-4 small text-muted">
+      <p class="mb-0">
+        All Rights Reserved 2024–25 © Copyright – LifeLinkr |
+        <a href="#" class="text-decoration-none">Privacy Policy</a> |
+        <a href="#" class="text-decoration-none">Ads Policy</a> |
+        <a href="#" class="text-decoration-none">Data Privacy</a> |
+        <a href="#" class="text-decoration-none">Disclaimer</a> |
+        <a href="#" class="text-decoration-none">User Agreement</a> |
+        <a href="#" class="text-decoration-none">Intellectual Property Rights</a> |<br>
+        <a href="#" class="text-decoration-none">Cookie Policy</a> |
+        <a href="#" class="text-decoration-none">Refund Policy</a> |
+        <a href="#" class="text-decoration-none">Contact Information</a> |
+        <a href="#" class="text-decoration-none">Accessibility Statement</a> |
+        <a href="#" class="text-decoration-none">Security Policy</a> |
+        <a href="#" class="text-decoration-none">GDPR Compliance</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Sticky Footer CTA -->
+<div class="mobile-footer-cta d-lg-none w-100" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1050;
+  border-top: 1px solid #ddd;
+  padding: 10px 12px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 100vw;
+  overflow-x: hidden;
+">
+  <div class="d-flex flex-column gap-2">
+    <!-- Line 1: Heading + Button -->
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <span class="fw-semibold text-primary small">FOR IVF SOFTWARE</span>
+      <a href="#demo-form" class="btn gradient-btn rounded-pill fw-semibold px-3 py-1" style="font-size: 0.8rem; white-space: nowrap;">
+        Schedule Demo
+      </a>
+    </div>
+
+    <!-- Line 2: Security + User Info -->
+    <div class="d-flex justify-content-between align-items-center flex-wrap small">
+      <div class="d-flex align-items-center me-2">
+        <img src="assets/images/security.png" alt="security" style="width: 18px;" class="me-1">
+        <span class="text-muted">Complete Data Security</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <img src="assets/images/user.png" alt="user" style="width: 18px;" class="me-1">
+        <span class="text-muted">Easy to learn software</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- More Sections here -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
